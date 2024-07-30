@@ -9,7 +9,7 @@ class LoginPage(BasePage):
     login_button = (By.CSS_SELECTOR, "button[type='submit']")
     new_tab_locator = (By.XPATH, "//a[normalize-space()=\"OrangeHRM, Inc\"]")  # New locator
 
-    def __init__(self, driver):         # object banaune bitikai call hunxa so driver instance ta chainxa ni ta so
+    def __init__(self, driver):         # object banaune bitikai call hunxa so driver instance ta chainxa 
         super().__init__(driver)
         self.driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
 
